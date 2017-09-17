@@ -27,6 +27,6 @@ COPY ./docker /docker
      && git clone https://github.com/luke-jr/bfgminer.git \
      && cd bfgminer \
      && ./autogen.sh \
-     && ./configure
+     && ./configure --enable-scrypt 
 
 #CMD ["/docker/bin/bfgminer"]
