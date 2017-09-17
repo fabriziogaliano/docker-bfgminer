@@ -23,9 +23,10 @@ COPY ./docker /docker
      libmicrohttpd-dev \
      git
 
- RUN cd /tmp \
-     && git clone https://github.com/luke-jr/bfgminer.git \
-     && cd bfgminer \
+ RUN cd /home \
+     && git clone https://github.com/luke-jr/bfgminer.git
+
+RUN  cd /home/bfgminer \
      && ./autogen.sh \
      && ./configure --enable-scrypt 
 
