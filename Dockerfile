@@ -1,5 +1,7 @@
 FROM sdhibit/rpi-raspbian:jessie
 
+#FROM resin/rpi-raspbian:jessie
+
 USER root
 
 RUN apt update -dd
@@ -10,23 +12,10 @@ RUN apt install -y \
     libtool \
     pkg-config \
     libcurl4-gnutls-dev \
-	libjansson-dev \
-    uthash-dev \
+    libjansson-dev \
+    uthash-dev \ 
     libncursesw5-dev \
     libudev-dev \
     libusb-1.0-0-dev \
-	libevent-dev \
+    libevent-dev \
     libmicrohttpd-dev
-    autoconf \
-    automake \
-    libtool \
-    pkg-config \
-    libcurl4-gnutls-dev \
-    libjansson-dev \
-    uthash-dev \
-    libncurses5-dev \
-    libncursesw5-dev \
-    libpdcurses \
-    hidapi \
-    libevent \
-    libusb-1.0-0-dev
