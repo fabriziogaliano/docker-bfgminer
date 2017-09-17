@@ -2,8 +2,8 @@ FROM sdhibit/rpi-raspbian:jessie
 
 USER root
 
-RUN apt update -dd \
-    && apt install -y -dd \
+RUN apt update -dd
+RUN apt install -y \
     build-essential \
     autoconf \
     automake \
