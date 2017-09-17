@@ -28,6 +28,18 @@ COPY ./docker /docker
 
 RUN  cd /home/bfgminer \
      && ./autogen.sh \
-     && ./configure --enable-scrypt --enable-bfsb --enable-jingtian --enable-knc  --enable-kncasic --enable-metabank --enable-minergate --enable-minion --enable-titan
+     && ./configure \
+     --enable-scrypt \
+     --enable-sha256d \
+     --enable-gridseed \
+     --enable-bfsb \
+     --enable-jingtian \
+     --enable-knc \
+     --enable-kncasic \
+     --enable-metabank \
+     --enable-minergate \
+     --enable-minion \
+     --enable-titan \
+     --enable-zeusminer
 
 #CMD ["/docker/bin/bfgminer"]
