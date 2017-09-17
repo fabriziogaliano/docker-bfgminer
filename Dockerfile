@@ -6,10 +6,6 @@ USER root
 
 COPY ./docker /docker
 
-#RUN apt update -dd && apt install -y boinc
-
-#RUN touch /etc/ld.so.conf.d/01-directories.conf && ldconfig
-
  RUN apt update -dd
  RUN apt install -y \
      build-essential \
