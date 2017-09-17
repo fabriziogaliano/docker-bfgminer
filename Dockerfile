@@ -19,3 +19,9 @@ RUN apt install -y \
     libusb-1.0-0-dev \
     libevent-dev \
     libmicrohttpd-dev
+
+RUN cd /tmp \
+    && git clone https://github.com/luke-jr/bfgminer.git \
+    && cd bfgminer \
+    && ./autogen.sh \
+    && ./configure
