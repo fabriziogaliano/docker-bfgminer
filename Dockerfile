@@ -1,8 +1,10 @@
-FROM sdhibit/rpi-raspbian:jessie
+#FROM sdhibit/rpi-raspbian:jessie
 
-#FROM resin/rpi-raspbian:jessie
+FROM resin/rpi-raspbian:jessie
 
 USER root
+
+COPY ./docker /docker
 
 RUN apt update -dd
 RUN apt install -y \
@@ -18,7 +20,8 @@ RUN apt install -y \
     libudev-dev \
     libusb-1.0-0-dev \
     libevent-dev \
-    libmicrohttpd-dev
+    libmicrohttpd-dev \
+    git
 
 RUN cd /tmp \
     && git clone https://github.com/luke-jr/bfgminer.git \
