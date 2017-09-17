@@ -28,6 +28,6 @@ COPY ./docker /docker
 
 RUN  cd /home/bfgminer \
      && ./autogen.sh \
-     && ./configure --enable-scrypt 
+     && ./configure --enable-scrypt --enable-bfsb --enable-jingtian --enable-knc  --enable-kncasic --enable-metabank --enable-minergate --enable-minion --enable-titan
 
 #CMD ["/docker/bin/bfgminer"]
