@@ -1,8 +1,8 @@
-FROM ubuntu:16.04
+FROM resin/rpi-raspbian:jessie
 
-ENV BFG_USER ""
-ENV BFG_PASSWORD ""
-ENV BFG_URL ""
+# ENV BFG_USER ""
+# ENV BFG_PASSWORD ""
+# ENV BFG_URL ""
 
 USER root
 
@@ -44,6 +44,6 @@ RUN  cd /home/bfgminer \
      --enable-zeusminer \
      && make
 
-ENTRYPOINT ["/bin/bash", "/docker/scripts/entrypoint.sh"]
+# ENTRYPOINT ["/bin/bash", "/docker/scripts/entrypoint.sh"]
 
-CMD ["/bin/bash", "/docker/scripts/start-mining.sh"]
+# CMD ["/bin/bash", "/docker/scripts/start-mining.sh"]
