@@ -1,10 +1,10 @@
-# docker-raspbian-bfgminer
-<<<<<<< HEAD
-[![](https://images.microbadger.com/badges/version/fabriziogaliano/docker-raspbian-bfgminer.svg)](https://microbadger.com/images/fabriziogaliano/docker-raspbian-bfgminer "Get your own version badge on microbadger.com") [![](https://images.microbadger.com/badges/image/fabriziogaliano/docker-raspbian-bfgminer.svg)](https://microbadger.com/images/fabriziogaliano/docker-raspbian-bfgminer "Get your own image badge on microbadger.com")
+# docker-bfgminer
 
-Docker images for Raspberry Pi with BFG miner for ASIC/FPGA devices and Scrypt and Sha256 algo (ex. LTC / BTC)
+[![](https://images.microbadger.com/badges/version/fabriziogaliano/docker-bfgminer.svg)](https://microbadger.com/images/fabriziogaliano/docker-bfgminer "Get your own version badge on microbadger.com") [![](https://images.microbadger.com/badges/image/fabriziogaliano/docker-bfgminer.svg)](https://microbadger.com/images/fabriziogaliano/docker-bfgminer "Get your own image badge on microbadger.com")
 
-Tryed with Gridseed Miner, would work with Zeus and other as well, by default this image is designed for GridSeed miner, override commad if you want use different devices!
+Docker images for x86_64 with BFG miner for ASIC/FPGA devices and Scrypt and Sha256 algo (ex. LTC / BTC)
+
+Tried with Gridseed Miner, would work with Zeus and other as well, by default this image is designed for GridSeed miner, override commad if you want use different devices!
 
 Specify --> user, password and URL; below an example:
 
@@ -31,6 +31,3 @@ command: [ "/home/bfgminer/Bfgminer", "-S", "gridseed:all", "--set-device", "gri
 ```
 
 # HAPPY MINING! :)
-=======
-Docker images for Raspberry Pi with BFG miner for ASIC/FPGA devices and Scrypt and Sha256 algo (ex. LTC / BTC)
->>>>>>> origin
