@@ -1,8 +1,8 @@
 FROM ubuntu:16.04
 
-ENV BFG_USER ""
-ENV BFG_PASSWORD ""
-ENV BFG_URL ""
+# ENV BFG_USER ""
+# ENV BFG_PASSWORD ""
+# ENV BFG_URL ""
 
 USER root
 
