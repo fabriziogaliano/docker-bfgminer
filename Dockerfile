@@ -40,7 +40,7 @@ RUN  cd /home/bfgminer \
      --enable-minergate \
      --enable-minion \
      --enable-titan \
-     --enable-zeusminer
+     --enable-zeusminer \
      && make
 
 ENTRYPOINT /bin/bash /docker/scripts/entrypoint.sh
