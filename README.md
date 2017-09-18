@@ -1,6 +1,6 @@
 # docker-bfgminer
 
-[![](https://images.microbadger.com/badges/version/fabriziogaliano/docker-bfgminer.svg)](https://microbadger.com/images/fabriziogaliano/docker-bfgminer "Get your own version badge on microbadger.com") [![](https://images.microbadger.com/badges/image/fabriziogaliano/docker-bfgminer.svg)](https://microbadger.com/images/fabriziogaliano/docker-bfgminer "Get your own image badge on microbadger.com")
+[![](https://images.microbadger.com/badges/version/fabriziogaliano/bfgminer.svg)](https://microbadger.com/images/fabriziogaliano/bfgminer "Get your own version badge on microbadger.com") [![](https://images.microbadger.com/badges/image/fabriziogaliano/bfgminer.svg)](https://microbadger.com/images/fabriziogaliano/bfgminer "Get your own image badge on microbadger.com")
 
 Docker images for x86_64 with BFG miner for ASIC/FPGA devices and Scrypt, Sha256, X11, etc... algo (ex. LTC / BTC / DASH / ETH)
 
