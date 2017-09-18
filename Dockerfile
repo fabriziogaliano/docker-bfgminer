@@ -44,6 +44,6 @@ RUN  cd /home/bfgminer \
      --enable-zeusminer \
      && make
 
-ENTRYPOINT ["/bin/bash", "/docker/scripts/entrypoint.sh"]
+#ENTRYPOINT ["/bin/bash", "/docker/scripts/entrypoint.sh"]
 
-CMD ["/bin/bash", "/docker/scripts/start-mining.sh"]
+#CMD ["/bin/bash", "/docker/scripts/start-mining.sh"]
