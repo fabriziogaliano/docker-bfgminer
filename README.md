@@ -10,7 +10,7 @@ Tried with Gridseed Miner, would work with Zeus and other as well,override comma
 version: '2'
 services:
    bfgminer:
-      image: fabriziogaliano/bfgminer:arm
+      image: fabriziogaliano/rpi-bfgminer:arm
 
       container_name: bfgminer-arm
       network_mode: host
