@@ -36,8 +36,6 @@ RUN  cd /home/bfgminer \
      --enable-gridseed \
      --enable-bfsb \
      --enable-jingtian \
-     --enable-knc \
-     --enable-kncasic \
      --enable-metabank \
      --enable-minergate \
      --enable-minion \
