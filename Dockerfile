@@ -1,6 +1,8 @@
-#FROM sdhibit/rpi-raspbian:jessie
-
 FROM resin/rpi-raspbian:jessie
+
+ENV BFG_USER ""
+ENV BFG_PASSWORD ""
+ENV BFG_URL ""
 
 USER root
 
@@ -42,4 +44,6 @@ RUN  cd /home/bfgminer \
      --enable-titan \
      --enable-zeusminer
 
-#CMD ["/docker/bin/bfgminer"]
+#ENTRYPOINT /docker/script/entrypoint.sh
+
+#CMD ["/start-mining.sh"]
