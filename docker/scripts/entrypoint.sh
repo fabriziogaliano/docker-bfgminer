@@ -11,7 +11,7 @@ for var in $(printenv); do
 
         export VALUE=${array[1]}
 
-        sed -i -e 's|<'$KEY'>|'$VALUE'|g' '/docker/scripts/start-mining.sh'
+        sed -i -e 's|<'$KEY'>|'$VALUE'|g' '/docker/configuration/supervisord/supervisor.conf'
 
     fi
 

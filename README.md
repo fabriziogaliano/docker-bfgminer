@@ -26,7 +26,7 @@ services:
 If you want ovverride the command by using docker compose simply insert the following command, of course with your custom configuration! :
 
 ```
-command: [ "/home/bfgminer/Bfgminer", "-S", "gridseed:all", "--set-device", "gridseed:clock=800", "--failover-only", "--scrypt", "--userpass", "fabri555.2:2",  "--url", "stratum+tcp://litecoinpool.org:3333" ]
+command: [ "/home/bfgminer/bfgminer", "-S", "gridseed:all", "--set-device", "gridseed:clock=800", "--failover-only", "--scrypt", "--userpass", "fabri555.2:2",  "--url", "stratum+tcp://litecoinpool.org:3333" ]
 
 ```
 
