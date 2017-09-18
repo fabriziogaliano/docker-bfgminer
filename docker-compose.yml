@@ -3,9 +3,9 @@ services:
    bfgminer:
       image: fabriziogaliano/docker-raspbian-bfgminer:latest
 
-      networks: host
+      network_mode: host
 
-      environments:
+      environment:
          BFG_USER: "fabri555.2"
          BFG_PASSWORD: "2"
          BFG_URL: "stratum+tcp://litecoinpool.org:3333"
