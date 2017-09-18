@@ -10,7 +10,7 @@ Tried with Gridseed Miner, would work with Zeus and other as well, override comm
 version: '2'
 services:
    bfgminer:
-      image: fabriziogaliano/docker-bfgminer:x86
+      image: fabriziogaliano/bfgminer:x86
 
       container_name: bfgminer-x86
       network_mode: host
