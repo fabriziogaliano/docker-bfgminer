@@ -8,26 +8,26 @@ USER root
 
 COPY ./docker /docker
 
- RUN apt update -dd
- RUN apt install -y \
-     supervisor \
-     build-essential \
-     autoconf \
-     automake \
-     libtool \
-     pkg-config \
-     libcurl4-gnutls-dev \
-     libjansson-dev \
-     uthash-dev \ 
-     libncursesw5-dev \
-     libudev-dev \
-     libusb-1.0-0-dev \
-     libevent-dev \
-     libmicrohttpd-dev \
-     git
+RUN apt update -dd
+RUN apt install -y \
+    supervisor \
+    build-essential \
+    autoconf \
+    automake \
+    libtool \
+    pkg-config \
+    libcurl4-gnutls-dev \
+    libjansson-dev \
+    uthash-dev \ 
+    libncursesw5-dev \
+    libudev-dev \
+    libusb-1.0-0-dev \
+    libevent-dev \
+    libmicrohttpd-dev \
+    git
 
- RUN cd /home \
-     && git clone https://github.com/luke-jr/bfgminer.git
+RUN cd /home \
+    && git clone https://github.com/luke-jr/bfgminer.git
 
 RUN  cd /home/bfgminer \
      && ./autogen.sh \
