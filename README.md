@@ -2,31 +2,22 @@
 
 [![](https://images.microbadger.com/badges/version/fabriziogaliano/docker-bfgminer.svg)](https://microbadger.com/images/fabriziogaliano/docker-bfgminer "Get your own version badge on microbadger.com") [![](https://images.microbadger.com/badges/image/fabriziogaliano/docker-bfgminer.svg)](https://microbadger.com/images/fabriziogaliano/docker-bfgminer "Get your own image badge on microbadger.com")
 
-Docker images for x86_64 with BFG miner for ASIC/FPGA devices and Scrypt and Sha256 algo (ex. LTC / BTC)
+Docker images for x86_64 with BFG miner for ASIC/FPGA devices and Scrypt, Sha256, X11, etc... algo (ex. LTC / BTC / DASH / ETH)
 
-Tried with Gridseed Miner, would work with Zeus and other as well, by default this image is designed for GridSeed miner, override commad if you want use different devices!
-
-Specify --> user, password and URL; below an example:
+Tried with Gridseed Miner, would work with Zeus and other as well, override commad if you want use different devices!
 
 ```
 version: '2'
 services:
    bfgminer:
-      image: fabriziogaliano/docker-raspbian-bfgminer:latest
+      image: fabriziogaliano/docker-bfgminer:x86
 
+      container_name: bfgminer-x86
       network_mode: host
+      privileged: true
+      tty: true
 
-      environment:
-         BFG_USER: "fabri555.2"
-         BFG_PASSWORD: "2"
-         BFG_URL: "stratum+tcp://litecoinpool.org:3333"
-
-```
-
-If you want ovverride the command by using docker compose simply insert the following command, of course with your custom configuration! :
-
-```
-command: [ "/home/bfgminer/bfgminer", "-S", "gridseed:all", "--set-device", "gridseed:clock=800", "--failover-only", "--scrypt", "--userpass", "fabri555.2:2",  "--url", "stratum+tcp://litecoinpool.org:3333" ]
+      command: ["/home/bfgminer/bfgminer", "-S", "gridseed:all", "--set-device", "gridseed:clock=800", "--failover-only", "--scrypt", "--userpass", "fabri555.2:2",  "--url", "stratum+tcp://litecoinpool.org:3333"]
 
 ```
 
