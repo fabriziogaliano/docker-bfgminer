@@ -19,6 +19,8 @@ services:
 
       command: ["/home/bfgminer/bfgminer", "-S", "gridseed:all", "--set-device", "gridseed:clock=800", "--failover-only", "--scrypt", "--userpass", "fabri555.2:2",  "--url", "stratum+tcp://litecoinpool.org:3333"]
 
+      restart: always
+
 ```
 
 # HAPPY MINING! :)
