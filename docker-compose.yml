@@ -5,6 +5,8 @@ services:
 
       network_mode: host
 
+      privileged: true
+
       environment:
          BFG_USER: "fabri555.2"
          BFG_PASSWORD: "2"
